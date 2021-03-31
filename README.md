@@ -1,12 +1,42 @@
 # interferon_1A_rotation_genetic_algorithm
 Python implementation of the genetic algorithm to optimize the body rotation of betainterferon 1A shots
 
+UNDER CONSTRUCTION
+
 About:
 
+The Interferon medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in arund 30 points around the patient body. It is recomended that the shots are aplayed in as sparse as possible, so this algorithm intents to obtain a optimized rotatition. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
 
 Dependencies:
 
+Numpy
+
 Documentation:
+
+From command line
+
+From command line in linux just call rotation.py - [list of points to exlude]
+
+The parameters are tested to have a good convergence, but can be modified with the following arguments
+
+Parameters to change:
+-i number of indivus; Default = 100
+-b number of best individuals to keep (fraction of the total number of individuaus); Default = 
+-w number of worst individuals to keep (fraction of the total number of individuaus);
+-a probability of change of "genetic material" between two solutions; Default = 
+-m probability of mutatuin; Default = 
+-n name of the destination folder; Default = 
+
+THE OBJECTIVE FUNCTION:
+
+The recomendation is sparse the applications as much as possible, and wait at least 3 applications to return near to some area. So, the objective function must keep some memory of what came before. So the objective function that we will minimize consist in the sumation of the distancies of the three previous steps, pondarated from a decresing exponential function, for all the points.
+
+To visualize the behavior of the algorithm, we will plot the result apllied on 30 points distributed in a circle:
+
+
+Complete rotation:
+
+Comparing with manual solution:
 
 
 Validation:
