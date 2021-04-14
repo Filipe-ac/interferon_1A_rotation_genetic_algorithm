@@ -26,10 +26,10 @@ One can generate their own points creating a file named "coordinates" with 3 col
 
 ####   Run from command line
 The parameters are tested and should converge in some minutes. To run the default options just type in command line (linux):    
-   'python rotation.py'
+   `python rotation.py`
 
 If you want to exclude some points:
-     python rotation.py-e [list of points to exlude]
+     `python rotation.py-e [list of points to exlude]`
 
 To modify the parameters, one can pass these arguments:
 
