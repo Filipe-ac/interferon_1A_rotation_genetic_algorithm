@@ -15,17 +15,36 @@ Documentation:
 
 From command line
 
-From command line in linux just call rotation.py - [list of points to exlude]
+The parameters are tested and should converge in some minutes. To run the default options just type in command line (linux):
+python rotation.py
 
-The parameters are tested to have a good convergence, but can be modified with the following arguments
+If you want to exclude some points:
+python rotation.py-e [list of points to exlude]
 
-Parameters to change:
--i number of indivus; Default = 100
--b number of best individuals to keep (fraction of the total number of individuaus); Default = 
--w number of worst individuals to keep (fraction of the total number of individuaus);
--a probability of change of "genetic material" between two solutions; Default = 
--m probability of mutatuin; Default = 
--n name of the destination folder; Default = 
+To modify the parameters, one can pass these arguments:
+
+-i: Number of iterations. Default = 50000
+-e: Points to exclude. Default = ''; (Acceptable entrys are [1,2..], 1,2,..)
+-npop: Population number. Default = 100
+-b: number of best individuals to keep (fraction of the total number of individuaus). Default = 20
+-w: number of worst individuals to keep (fraction of the total number of individuaus). Default = 10
+-m: mutation probabilitie. Default = 0.7
+-c: coulple probabilitie. Default = 0.7
+
+
+For test purposes:
+
+-p: coordinates of the points. Default =coordinates , wich will get the coordinates from the file "coordinates"
+    other options are: "sphere", "spiral" or "circle", wich will create random points in these geometries. 
+-np: number of points (only relevant if -p equal to "sphere", "spiral" or "circle"). Default = 30
+
+To control the output:
+
+-n: name of the destination folder. Default = interferon_rotation
+-plots: if 1, will generate plots of the solutions. Default = 0
+-v: Verbose (0 or 1). Default = 0
+ 
+
 
 THE OBJECTIVE FUNCTION:
 
