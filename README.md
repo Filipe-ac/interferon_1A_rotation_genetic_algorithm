@@ -2,7 +2,7 @@
 Python implementation of the genetic algorithm to optimize the body rotation for Interferon Beta-1a (*Rebif*) shots
 
 ## About:
-The Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body. It is recomended that the shots are aplayed in the sparsest fashion possible, wich is the objective of this program, that make use of the genetic algorithm to obtain a optimized rotatition. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
+The Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body. It is recomended that the shots are aplayed in the sparsest fashion possible, which is the objective of this program, that make use of the genetic algorithm to obtain a optimized rotatition. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
 
 ## Dependencies:
 
@@ -20,7 +20,7 @@ First of all you must download the "rotation.py" script, and the "coordinates" f
 <img src="https://user-images.githubusercontent.com/78453361/114648406-1d542700-9cb5-11eb-9b56-c470074df9e9.png" width="500">
 
 
-Please, note that this is not a indication of where one should apply the medicine, wich should be discussed with a health professional. More informations can be found in [https://www.rebif.com/en]
+Please, note that this is not a indication of where one should apply the medicine, which should be discussed with a health professional. More informations can be found in [https://www.rebif.com/en]
 
 One can generate their own points creating a file named "coordinates" with 3 columns, for the x, y and z dimensions of each point.
 
@@ -51,15 +51,15 @@ To control the output:
 
 For test purposes:
 
-- -p: coordinates of the points. Default =coordinates , wich will get the coordinates from the file "coordinates"  
-    other options are: "sphere", "spiral" or "circle", wich will create random points in these geometries.   
+- -p: coordinates of the points. Default =coordinates , which will get the coordinates from the file "coordinates"  
+    other options are: "sphere", "spiral" or "circle", which will create random points in these geometries.   
 - -np: number of points (only relevant if -p equal to "sphere", "spiral" or "circle"). Default = 30 
 - 
 ## The Objective Functon:
 
-The recomendation is sparse the applications as much as possible, and wait at least 3 applications to return near to some area, wich force the objective function to keep some "memory". With that in mind, the objective function that we will minimize consist in the sumation of the distancies of the three previous steps, pondarated from a decresing exponential function, calculated for all points.  
+The recomendation is sparse the applications as much as possible, and wait at least 3 applications to return near to some area, which force the objective function to keep some "memory". With that in mind, the objective function that we will minimize consist in the sumation of the distancies of the three previous steps, pondarated from a decresing exponential function, calculated for all points.  
 
-To visualize the behavior of the algorithm, we will plot the result in a circle with 30 points, wich the first rotation was randomly generated. 
+To visualize the behavior of the algorithm, we will plot the result in a circle with 30 points, which the first rotation was randomly generated. 
 
 <img src="https://user-images.githubusercontent.com/78453361/114650184-2abee080-9cb8-11eb-8c93-b0d5b65e863f.png" width="500">
 
@@ -73,7 +73,7 @@ Here is a possible solution based on *rebif* points definition used in a suggest
 
 The motivation for this program was build a better rotation for my wife. 
 
-My first attempt consisted in manually set a rotationa, wich leaded to this value for the objective function defined above:  
+My first attempt consisted in manually set a rotationa, which yielded this value for the objective function defined above:  
 Manual result: 0.01500911342024823 (1/distance)
 
 Using the algorithm:           
