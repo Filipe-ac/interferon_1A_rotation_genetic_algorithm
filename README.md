@@ -26,21 +26,20 @@ One can generate their own points creating a file named "coordinates" with 3 col
 
 ####   Run from command line
 The parameters are tested and should converge in some minutes. To run the default options just type in command line (linux):    
-   `python rotation.py`
+    `python rotation.py`
 
-If you want to exclude some points:
-     `python rotation.py-e [list of points to exlude]`
+If you want to exclude some points:  
+    `python rotation.py-e [list of points to exlude]`
 
 To modify the parameters, one can pass these arguments:
 
--i: Number of iterations. Default = 50000  
--e: Points to exclude. Default = ''; (Acceptable entrys are [1,2..], 1,2,..)  
-  
--npop: Population number. Default = 100  
--b: number of best individuals to keep (fraction of the total number of individuaus). Default = 20  
--w: number of worst individuals to keep (fraction of the total number of individuaus). Default = 10  
--m: mutation probabilitie. Default = 0.7  
--c: coulple probabilitie. Default = 0.7  
+- -i: Number of iterations. Default = 50000  
+- -e: Points to exclude. Default = ''; (Acceptable entrys are [1,2..], 1,2,..)  
+- -npop: Population number. Default = 100  
+- -b: number of best individuals to keep (fraction of the total number of individuaus). Default = 20  
+- -w: number of worst individuals to keep (fraction of the total number of individuaus). Default = 10  
+- -m: mutation probabilitie. Default = 0.7  
+- -c: coulple probabilitie. Default = 0.7  
 
 For test purposes:
 
