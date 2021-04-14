@@ -1,15 +1,19 @@
 # interferon_1A_rotation_genetic_algorithm
-Python implementation of the genetic algorithm to optimize the body rotation for Interferon Beta-1a (Rebif) shots
+    Python implementation of the genetic algorithm to optimize the body rotation for Interferon Beta-1a (Rebif) shots
 
 UNDER CONSTRUCTION
 
-About:
+# About:
 
-The Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body. It is recomended that the shots are aplayed in as sparse as possible. This program apply the genetic algorithm to obtain a optimized rotatition. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
+    The Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body. It is recomended that the shots are aplayed in as sparse as possible. This program apply the genetic algorithm to obtain a optimized rotatition. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
 
 Dependencies:
 
 Numpy
+
+Optional dependencie:
+
+Matplotlib (If one would like to plot the solutions. Ultimately not necessary)
 
 Documentation:
 
@@ -54,6 +58,8 @@ To visualize the behavior of the algorithm, we will plot the result apllied on 3
 
 
 Complete rotation:
+1, 30, 14,  5, 20, 24, 16,  6, 19, 21, 28, 11,  3,  2, 27, 29,  4,  7, 23, 26,  8, 15, 18, 22, 12, 10, 17, 25, 13,  9
+       
 
 Comparing with manual solution:
  Algorithm              Manua result (1/distance)
