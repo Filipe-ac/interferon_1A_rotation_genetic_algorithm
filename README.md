@@ -57,7 +57,7 @@ To visualize the behavior of the algorithm, we will plot the result apllied on 3
 ## Complete rotation:
 Here is a possible solution based on *rebif* points definition used in a journal published in Brazil:
 
-<img src="https://user-images.githubusercontent.com/78453361/114648406-1d542700-9cb5-11eb-9b56-c470074df9e9.png" width="1000">
+<img src="https://user-images.githubusercontent.com/78453361/114648406-1d542700-9cb5-11eb-9b56-c470074df9e9.png" width="500">
 
 1, 30, 14,  5, 20, 24, 16,  6, 19, 21, 28, 11,  3,  2, 27, 29,  4,  7, 23, 26,  8, 15, 18, 22, 12, 10, 17, 25, 13,  9
  
