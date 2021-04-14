@@ -22,7 +22,7 @@ First of all you must download the "rotation.py" script, and the "coordinates" f
 
 Please, note that this is not a indication of where one should apply the medicine, wich should be discussed with a health professional. More informations can be found in [https://www.rebif.com/en]
 
-One can generate their own points creating a file named "coordinates" with 3 columns, for the x, y and z dimensions.
+One can generate their own points creating a file named "coordinates" with 3 columns, for the x, y and z dimensions of each point.
 
 ####   Run from command line
 The parameters are tested and should converge in some minutes. To run the default options just type in command line (linux):    
