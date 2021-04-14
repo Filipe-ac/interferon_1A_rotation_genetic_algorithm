@@ -40,19 +40,21 @@ To modify the parameters, one can pass these arguments:
 - -w: number of worst individuals to keep (fraction of the total number of individuaus). Default = 10  
 - -m: mutation probabilitie. Default = 0.7  
 - -c: coulple probabilitie. Default = 0.7  
-
-For test purposes:
-
--p: coordinates of the points. Default =coordinates , wich will get the coordinates from the file "coordinates"  
-    other options are: "sphere", "spiral" or "circle", wich will create random points in these geometries.   
--np: number of points (only relevant if -p equal to "sphere", "spiral" or "circle"). Default = 30  
+ 
 
 To control the output:
 
--n: name of the destination folder. Default = interferon_rotation  
--plots: if 1, will generate plots of the solutions. Default = 0  
--v: Verbose (0 or 1). Default = 0  
+- -n: name of the destination folder. Default = interferon_rotation  
+- -plots: if 1, will generate plots of the solutions. Default = 0  
+- -v: Verbose (0 or 1). Default = 0  
 
+
+For test purposes:
+
+- -p: coordinates of the points. Default =coordinates , wich will get the coordinates from the file "coordinates"  
+    other options are: "sphere", "spiral" or "circle", wich will create random points in these geometries.   
+- -np: number of points (only relevant if -p equal to "sphere", "spiral" or "circle"). Default = 30 
+- 
 ## The Objective Functon:
 
 The recomendation is sparse the applications as much as possible, and wait at least 3 applications to return near to some area, wich force the objective function to keep some "memory". With that in mind, the objective function that we will minimize consist in the sumation of the distancies of the three previous steps, pondarated from a decresing exponential function, calculated for all points.  
