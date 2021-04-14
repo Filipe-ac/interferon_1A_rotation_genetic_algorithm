@@ -54,7 +54,7 @@ For test purposes:
 - -p: coordinates of the points. Default =coordinates , which will get the coordinates from the file "coordinates"  
     other options are: "sphere", "spiral" or "circle", which will create random points in these geometries.   
 - -np: number of points (only relevant if -p equal to "sphere", "spiral" or "circle"). Default = 30 
-- 
+
 ## The Objective Functon:
 
 The recomendation is sparse the applications as much as possible, and wait at least 3 applications to return near to some area, which force the objective function to keep some "memory". With that in mind, the objective function that we will minimize consist in the sumation of the distancies of the three previous steps, pondarated from a decresing exponential function, calculated for all points.  
