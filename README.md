@@ -1,29 +1,28 @@
 # interferon_1A_rotation_genetic_algorithm
-  Python implementation of the genetic algorithm to optimize the body rotation for Interferon Beta-1a (Rebif) shots
+   Python implementation of the genetic algorithm to optimize the body rotation for Interferon Beta-1a (Rebif) shots
 
 UNDER CONSTRUCTION
 
 ## About:
-
-\tThe Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body. It is recomended that the shots are aplayed in as sparse as possible. This program apply the genetic algorithm to obtain a optimized rotatition. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
+   The Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body. It is recomended that the shots are aplayed in as sparse as possible. This program apply the genetic algorithm to obtain a optimized rotatition. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
 
 ## Dependencies:
 
-  Numpy
+   Numpy
 
 #### Optional dependencie:
 
-  Matplotlib (If one would like to plot the solutions. Ultimately not necessary)
+   Matplotlib (If one would like to plot the solutions. Ultimately not necessary)
 
 ## Documentation:
 
 #### From command line
 
-The parameters are tested and should converge in some minutes. To run the default options just type in command line (linux):
-python rotation.py
+  The parameters are tested and should converge in some minutes. To run the default options just type in command line (linux):    
+  'python rotation.py'
 
-If you want to exclude some points:
-python rotation.py-e [list of points to exlude]
+  If you want to exclude some points:
+  python rotation.py-e [list of points to exlude]
 
 To modify the parameters, one can pass these arguments:
 
