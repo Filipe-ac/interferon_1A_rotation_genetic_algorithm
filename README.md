@@ -27,7 +27,9 @@ If you want to exclude some points:
 To modify the parameters, one can pass these arguments:
 
 -i: Number of iterations. Default = 50000
+
 -e: Points to exclude. Default = ''; (Acceptable entrys are [1,2..], 1,2,..)
+
 -npop: Population number. Default = 100
 -b: number of best individuals to keep (fraction of the total number of individuaus). Default = 20
 -w: number of worst individuals to keep (fraction of the total number of individuaus). Default = 10
