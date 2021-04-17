@@ -2,7 +2,7 @@
 Python implementation of the genetic algorithm to optimize the body rotation for Interferon Beta-1a (*Rebif*) shots
 
 ## About:
-The Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body. It is recomended that the shots are aplayed in the sparsest fashion possible, which is the objective of this program, that make use of the genetic algorithm to obtain a optimized rotatition. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
+The Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body, in the sparsest fashion possible The objective of this program is apply the genetic algorithmto to find an optimal application rotation. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
 
 ## Dependencies:
 
