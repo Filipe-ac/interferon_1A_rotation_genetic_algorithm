@@ -1,4 +1,4 @@
-# interferon_1A_rotation_genetic_algorithm
+# Interferon Beta-1a rotation using genetic algorithm
 Python implementation of the genetic algorithm to optimize body rotation for Interferon Beta-1a (*Rebif*) shots
 
 ## About:
