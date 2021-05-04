@@ -1,26 +1,26 @@
 # interferon_1A_rotation_genetic_algorithm
-Python implementation of the genetic algorithm to optimize the body rotation for Interferon Beta-1a (*Rebif*) shots
+Python implementation of the genetic algorithm to optimize body rotation for Interferon Beta-1a (*Rebif*) shots
 
 ## About:
-The Interferon Beta-1a medication is ministrated with a subcutenous injection, usualy trhice a week, that can be applyed in around 30 points over the patient body, in the sparsest fashion possible The objective of this program is apply the genetic algorithmto to find an optimal application rotation. Note that not all possible points are suitable for all patiantes, so the answer for this problem may vary from on person to another.
+The Interferon Beta-1a medication is administered subcutaneously, usually trhice a week, and it can be injected in approximately 30 spots over the patient's body, in the sparsest fashion possible. The objective of this program is to apply the genetic algorithm to find an optimal application rotation. Note that not all possible spots are suitable for all patients, so the answer to this problem may vary from person to person.
 
-## Dependencies:
+## Dependencies
 
 Numpy
 
-#### Optional dependencie:
+#### Optional dependencies:
 
 Matplotlib (If one would like to plot the solutions. Ultimately not necessary)
 
 ## Documentation:
 
 
-First of all you must download the "rotation.py" script, and the "coordinates" file. The latter contains the pixel coordinates of the application points, based on a suggestion from official image distributed in Brazil:
+First of all, you must download the "rotation.py" script and the "coordinates" file. The latter contains the pixel coordinates of the application spots, based on a suggestion from an official image distributed in Brazil:
 
 <img src="https://user-images.githubusercontent.com/78453361/114648406-1d542700-9cb5-11eb-9b56-c470074df9e9.png" width="500">
 
 
-Please, note that this is not a indication of where one should apply the medicine, which should be discussed with a health professional. More informations can be found in [https://www.rebif.com/en]
+Please, note that this is not an indication of where one should apply the medicine, which should be discussed with a health professional. More informations can be found in [https://www.rebif.com/en]
 
 One can generate their own points creating a file named "coordinates" with 3 columns, for the x, y and z dimensions of each point.
 
