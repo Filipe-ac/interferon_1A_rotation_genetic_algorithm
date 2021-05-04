@@ -89,6 +89,6 @@ In order to validate the code, I created 100 points in a circle and minimized th
 
 
 
-The convergence plot is shown in the following image:
+The convergence plot is shown in the following image:  
 
-![image](https://user-images.githubusercontent.com/78453361/113073076-c9b6e900-919e-11eb-83d0-2911cc743a3d.png)
+![image](https://user-images.githubusercontent.com/78453361/117080266-db4a5e00-ad13-11eb-84be-6e4bc8027654.png)
