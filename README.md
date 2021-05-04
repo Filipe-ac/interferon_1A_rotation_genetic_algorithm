@@ -64,7 +64,7 @@ The recommendation is to distance the applications from one another as much as p
 
 To visualize the behavior of the algorithm, we will plot the result in a circle with 30 points. The first rotation was randomly generated. 
 
-<img src="https://user-images.githubusercontent.com/78453361/114650184-2abee080-9cb8-11eb-8c93-b0d5b65e863f.png" width="500">
+<img src="https://user-images.githubusercontent.com/78453361/114650184-2abee080-9cb8-11eb-8c93-b0d5b65e863f.png" width="800">
 
 ## Complete rotation:
 Here is a possible solution based on *rebif* points definition used in a suggestion published in Brazil, as previously discussed:
