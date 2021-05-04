@@ -31,7 +31,7 @@ The parameters are tested and should converge in some minutes. To run the defaul
 If you want to exclude some points:  
     `python rotation.py-e [list of points to exlude]`
     
-Acepted formats for points are:
+Acepted formats for points are:  
 `[p1,p2,...,pn]` or `p1,p2,...pn`
 
 To modify the parameters, one can pass these arguments:
