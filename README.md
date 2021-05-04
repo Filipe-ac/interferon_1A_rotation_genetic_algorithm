@@ -62,21 +62,21 @@ For test purposes:
 
 The recommendation is to distance the applications from one another as much as possible, and avoid the same area for at least 3 applications. Hence, the objective function must keep some "memory". With that in mind, the objective function that we will minimize consists in the sum of the distances of the three previous steps, weighted by a decreasing exponential function, calculated for all points.  
 
-To visualize the behavior of the algorithm, we will plot the result in a circle with 30 points, in which the first rotation was randomly generated. 
+To visualize the behavior of the algorithm, we will plot the result in a circle with 30 points. The first rotation was randomly generated. 
 
 <img src="https://user-images.githubusercontent.com/78453361/114650184-2abee080-9cb8-11eb-8c93-b0d5b65e863f.png" width="500">
 
 ## Complete rotation:
-Here is a possible solution based on *rebif* points definition used in a suggestion published in Brazil, as discussed above:
+Here is a possible solution based on *rebif* points definition used in a suggestion published in Brazil, as previously discussed:
 
 1, 30, 14,  5, 20, 24, 16,  6, 19, 21, 28, 11,  3,  2, 27, 29,  4,  7, 23, 26,  8, 15, 18, 22, 12, 10, 17, 25, 13,  9
  
 
-## Comparing with manual solution:
+## Comparing with a manual solution:
 
-The motivation for this program was build a better rotation for my wife. 
+The motivation for this program was to build a better rotation for my wife. 
 
-My first attempt consisted in manually set a rotationa, which yielded this value for the objective function defined above:  
+My first attempt consisted in manually setting a rotation, which yielded this value for the objective function defined above:  
 Manual result: 0.01500911342024823 (1/distance)
 
 Using the algorithm:           
@@ -85,10 +85,10 @@ Algorithm: 0.008883459711788349 (1/distance)
 
 ## Validation:
 
-In order to validate the code, we cretated 100 points in a circle and minimize the path that cover all points each time, returning to the initial point. The images above show the first path (radomly genereted) and the final path.![_tmp00000](https://user-images.githubusercontent.com/78453361/113072812-50b79180-919e-11eb-94ba-4ee2159d3654.png)![_tmp117159](https://user-images.githubusercontent.com/78453361/113072823-56ad7280-919e-11eb-8ba5-b4f874111dc5.png)
+In order to validate the code, I created 100 points in a circle and minimized the path that covers all points, one at a time, returning to the initial point. The following images show the first path (randomly generated) and the optimized final path.![_tmp00000](https://user-images.githubusercontent.com/78453361/113072812-50b79180-919e-11eb-94ba-4ee2159d3654.png)![_tmp117159](https://user-images.githubusercontent.com/78453361/113072823-56ad7280-919e-11eb-8ba5-b4f874111dc5.png)
 
 
 
-The convergencie plot is show below:
+The convergence plot is shown in the following image:
 
 ![image](https://user-images.githubusercontent.com/78453361/113073076-c9b6e900-919e-11eb-83d0-2911cc743a3d.png)
