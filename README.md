@@ -32,7 +32,7 @@ If you want to exclude some points:
     `python rotation.py-e [list of points to exlude]`
     
 Acepted formats for points are:  
-`[p1,p2,...,pn]` or `p1,p2,...pn`
+`[p1,p2,...,pn]` or `p1,p2,...,pn`
 
 To modify the parameters, one can pass these arguments:
 
