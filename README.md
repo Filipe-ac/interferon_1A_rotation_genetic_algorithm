@@ -20,7 +20,7 @@ First of all, you must download the "rotation.py" script and the "coordinates" f
 <img src="https://user-images.githubusercontent.com/78453361/114648406-1d542700-9cb5-11eb-9b56-c470074df9e9.png" width="500">
 
 
-Please, note that this is not an indication of where one should apply the medicine, which should be discussed with a health professional. More informations can be found in [https://www.rebif.com/en]
+Please, note that this is not an indication of where one should apply the medicine. Always consult with a health professional. More information can be found in [https://www.rebif.com/en]
 
 One can generate their own points creating a file named "coordinates" with 3 columns, for the x, y and z dimensions of each point.
 
@@ -28,21 +28,21 @@ One can generate their own points creating a file named "coordinates" with 3 col
 The parameters are tested and should converge in some minutes. To run the default options just type in command line (linux):    
     `python rotation.py`
 
-If you want to exclude some points:  
-    `python rotation.py-e [list of points to exlude]`
+If you want to exclude any points:  
+    `python rotation.py -e [list of points to exlude]`
     
-Acepted formats for points are:  
+Accepted formats for points are:  
 `[p1,p2,...,pn]` or `p1,p2,...,pn`
 
-To modify the parameters, one can pass these arguments:
+To modify the parameters, one can pass the following arguments:
 
 - -i: Number of iterations. Default = 50000  
-- -e: Points to exclude. Default = ''; (Acceptable entrys are [1,2..], 1,2,..)  
+- -e: Points to exclude. Default = ''; (Acceptable entries are [1,2..], 1,2,..)  
 - -npop: Population number. Default = 100  
-- -b: number of best individuals to keep (fraction of the total number of individuaus). Default = 20  
-- -w: number of worst individuals to keep (fraction of the total number of individuaus). Default = 10  
-- -m: mutation probabilitie. Default = 0.7  
-- -c: coulple probabilitie. Default = 0.7  
+- -b: number of best individuals to keep (fraction of the total number of individuals). Default = 20  
+- -w: number of worst individuals to keep (fraction of the total number of individuals). Default = 10  
+- -m: mutation probability. Default = 0.7  
+- -c: couple probability. Default = 0.7  
  
 
 To control the output:
@@ -54,15 +54,15 @@ To control the output:
 
 For test purposes:
 
-- -p: coordinates of the points. Default =coordinates , which will get the coordinates from the file "coordinates"  
-    other options are: "sphere", "spiral" or "circle", which will create random points in these geometries.   
-- -np: number of points (only relevant if -p equal to "sphere", "spiral" or "circle"). Default = 30 
+- -p: coordinates of the points. Default = coordinates, will get the coordinates from the file "coordinates".  
+    other built-in options are: "sphere", "spiral" or "circle", which will create random points in these geometries.   
+- -np: number of points (only relevant if -p equals "sphere", "spiral" or "circle"). Default = 30 
 
-## The Objective Functon:
+## The Objective Function:
 
-The recomendation is sparse the applications as much as possible, and wait at least 3 applications to return near to some area, which force the objective function to keep some "memory". With that in mind, the objective function that we will minimize consist in the sumation of the distancies of the three previous steps, pondarated from a decresing exponential function, calculated for all points.  
+The recommendation is to distance the applications from one another as much as possible, and avoid the same area for at least 3 applications. Hence, the objective function must keep some "memory". With that in mind, the objective function that we will minimize consists in the sum of the distances of the three previous steps, weighted by a decreasing exponential function, calculated for all points.  
 
-To visualize the behavior of the algorithm, we will plot the result in a circle with 30 points, which the first rotation was randomly generated. 
+To visualize the behavior of the algorithm, we will plot the result in a circle with 30 points, in which the first rotation was randomly generated. 
 
 <img src="https://user-images.githubusercontent.com/78453361/114650184-2abee080-9cb8-11eb-8c93-b0d5b65e863f.png" width="500">
 
